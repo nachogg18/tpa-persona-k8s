@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: springboot-k8s-mysql
+  name: persona-image
   labels:
-    name: springboot-k8s-mysql
+    name: persona-image
 spec:
   ports:
     - nodePort: 30163 
@@ -11,27 +11,27 @@ spec:
       targetPort: 8080  
       protocol: TCP
   selector:           
-    app: springboot-k8s-mysql
+    app: persona-image
   type: NodePort       
 
 ---
 apiVersion: apps/v1 
 kind: Deployment    
 metadata:              
-  name: springboot-k8s-mysql
+  name: persona-image
 spec:                
   selector:         
     matchLabels:
-      app: springboot-k8s-mysql
+      app: persona-image
   replicas: 3        
   template:
     metadata:
       labels:        
-        app: springboot-k8s-mysql
+        app: persona-image
     spec:
       containers:
-        - name: springboot-k8s-mysql
-          image: springboot-k8s-mysql:1.0
+        - name: persona-image
+          image: persona-image:0.0.1
           ports:
             - containerPort: 8080                
           env:   # Setting Enviornmental Variables
