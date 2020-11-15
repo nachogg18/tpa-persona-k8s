@@ -14,9 +14,7 @@
 	<name>persona</name>
 	<description>Mi primera API REST</description>
 
-	<properties>
-		<java.version>14</java.version>
-	</properties>
+
 
 	<dependencies>
 		<dependency>
