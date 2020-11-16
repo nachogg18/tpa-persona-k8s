@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Audited
 public class Libro extends Base {
 
     @Column(name="titulo")
