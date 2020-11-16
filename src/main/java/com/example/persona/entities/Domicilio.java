@@ -14,7 +14,6 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Audited
 public class Domicilio extends Base {
 
     @Column(name="calle")

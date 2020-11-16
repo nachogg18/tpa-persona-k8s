@@ -16,7 +16,6 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Audited
 public class Localidad extends Base {
 
     @Column(name = "denominacion")

@@ -16,7 +16,6 @@ import javax.persistence.Table;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Audited
 public class Autor extends Base {
 
     @Column(name="nombre")

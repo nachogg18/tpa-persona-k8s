@@ -17,7 +17,6 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-@Audited
 public class Persona extends Base {
 
     @Column(name="nombre")
