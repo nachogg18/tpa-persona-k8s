@@ -19,7 +19,7 @@ jobs:
         
         
       - name: list directories
-        run: ls -la
+        run: mkdir -p /tmp/persona.jar
         
         
       - name: Set up QEMU
